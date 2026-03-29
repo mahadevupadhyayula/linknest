@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'https://esm.sh/react@18';
+import React, { useState, useEffect, useRef } from 'react';
 
-import { createRoot } from 'https://esm.sh/react-dom@18/client';
+import { createRoot } from 'react-dom/client';
 // === SECTION 1: IMPORTS AND TYPES ===
 
 interface FAQItem {
