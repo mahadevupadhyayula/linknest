@@ -1,0 +1,315 @@
+{
+  "id": "workspace-595217",
+  "name": "LinkNest",
+  "description": "Workspace for LinkNest",
+  "version": "1.0.0",
+  "templateVersion": 1,
+  "apps": [
+    {
+      "id": "engagement-tracker",
+      "name": "Engagement Tracker",
+      "icon": "git-branch",
+      "dataFile": "data/engagement-tracker.json",
+      "component": "apps/engagement-tracker/App.tsx"
+    },
+    {
+      "id": "smart-drafts",
+      "name": "Smart Drafts",
+      "icon": "pen-tool",
+      "dataFile": "data/smart-drafts.json",
+      "component": "apps/smart-drafts/App.tsx"
+    },
+    {
+      "id": "target-manager",
+      "name": "TargetManager",
+      "icon": "Sparkles",
+      "component": "apps/TargetManager/App.tsx"
+    }
+  ],
+  "terminology": {
+    "reading": "loading",
+    "writing": "saving",
+    "creating": "adding",
+    "deleting": "removing",
+    "editing": "updating"
+  },
+  "desktop": {
+    "theme": {
+      "gradient": "from-slate-50 via-slate-100 to-white",
+      "accentColor": "#f97068",
+      "dockStyle": "glass"
+    },
+    "themeRecipe": "glass",
+    "themeTokens": {
+      "palette": {
+        "primary": "#0ea5e9",
+        "highlight": "#f97068",
+        "contrast": "#10b981",
+        "secondary": "#f97068",
+        "accent": "#10b981",
+        "primaryScale": {
+          "50": "#f0f9ff",
+          "100": "#e0f2fe",
+          "200": "#bae6fd",
+          "500": "#0ea5e9",
+          "600": "#0284c7",
+          "700": "#0369a1",
+          "900": "#0c4a6e"
+        },
+        "highlightScale": {
+          "50": "#fff5f4",
+          "100": "#ffe8e6",
+          "200": "#ffccc8",
+          "500": "#f97068",
+          "600": "#e5534e",
+          "700": "#c73e39",
+          "900": "#7a1f1c"
+        },
+        "surfaces": {
+          "page": "#fafcfe",
+          "pageAlt": "#f0f6fb",
+          "gradientFrom": "#0ea5e9",
+          "gradientVia": "#7dd3fc",
+          "gradientTo": "#f97068",
+          "card": "#ffffff",
+          "cardHover": "#f0f9ff",
+          "panel": "#f0f6fb",
+          "panelStrong": "#e0f2fe",
+          "muted": "#e2e8f0",
+          "accentSoft": "#fff5f4",
+          "border": "#cbd5e1",
+          "borderStrong": "#94a3b8"
+        },
+        "text": {
+          "primary": "#0f172a",
+          "secondary": "#475569",
+          "brand": "#0284c7",
+          "accent": "#f97068",
+          "muted": "#94a3b8",
+          "onPrimary": "#ffffff",
+          "onHighlight": "#ffffff",
+          "onContrast": "#ffffff"
+        },
+        "semantic": {
+          "success": "#16a34a",
+          "warning": "#d97706",
+          "danger": "#dc2626"
+        },
+        "shell": {
+          "buttonText": "#ffffff",
+          "accentButtonText": "#ffffff",
+          "dockText": "#475569",
+          "icon": "#0ea5e9",
+          "shadow": "#b7e4f8",
+          "shadowStrong": "#95d7f5"
+        }
+      },
+      "typography": {
+        "headingFont": "DM Sans",
+        "bodyFont": "DM Sans",
+        "fontFamily": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+      },
+      "shell": {
+        "accentColor": "#f97068",
+        "dockStyle": "glass",
+        "pageBackground": "#fafcfe",
+        "gateBackground": "linear-gradient(135deg, #0ea5e9, #7dd3fc, #f97068)",
+        "panelBackground": "#f0f6fb",
+        "panelStrongBackground": "#e0f2fe"
+      },
+      "cssVariables": {
+        "--space-brand-primary": "#0ea5e9",
+        "--space-brand-highlight": "#f97068",
+        "--space-brand-contrast": "#10b981",
+        "--space-brand-primary-50": "#f0f9ff",
+        "--space-brand-primary-100": "#e0f2fe",
+        "--space-brand-primary-200": "#bae6fd",
+        "--space-brand-primary-500": "#0ea5e9",
+        "--space-brand-primary-600": "#0284c7",
+        "--space-brand-primary-700": "#0369a1",
+        "--space-brand-primary-900": "#0c4a6e",
+        "--space-brand-highlight-50": "#fff5f4",
+        "--space-brand-highlight-100": "#ffe8e6",
+        "--space-brand-highlight-200": "#ffccc8",
+        "--space-brand-highlight-500": "#f97068",
+        "--space-brand-highlight-600": "#e5534e",
+        "--space-brand-highlight-700": "#c73e39",
+        "--space-brand-highlight-900": "#7a1f1c",
+        "--space-surface-page": "#fafcfe",
+        "--space-surface-page-alt": "#f0f6fb",
+        "--space-surface-gradient-from": "#0ea5e9",
+        "--space-surface-gradient-via": "#7dd3fc",
+        "--space-surface-gradient-to": "#f97068",
+        "--space-surface-card": "#ffffff",
+        "--space-surface-card-hover": "#f0f9ff",
+        "--space-surface-panel": "#f0f6fb",
+        "--space-surface-panel-strong": "#e0f2fe",
+        "--space-surface-muted": "#e2e8f0",
+        "--space-surface-accent-soft": "#fff5f4",
+        "--space-border-default": "#cbd5e1",
+        "--space-border-strong": "#94a3b8",
+        "--space-text-primary": "#0f172a",
+        "--space-text-secondary": "#475569",
+        "--space-text-brand": "#0284c7",
+        "--space-text-accent": "#f97068",
+        "--space-text-muted": "#94a3b8",
+        "--space-text-on-primary": "#ffffff",
+        "--space-text-on-highlight": "#ffffff",
+        "--space-text-on-contrast": "#ffffff",
+        "--space-semantic-success": "#16a34a",
+        "--space-semantic-warning": "#d97706",
+        "--space-semantic-danger": "#dc2626",
+        "--space-shell-button-text": "#ffffff",
+        "--space-shell-accent-button-text": "#ffffff",
+        "--space-shell-dock-text": "#475569",
+        "--space-shell-icon": "#0ea5e9",
+        "--space-shell-shadow": "#b7e4f8",
+        "--space-shell-shadow-strong": "#95d7f5"
+      }
+    },
+    "layout": {
+      "agentPosition": "center",
+      "dockPosition": "left",
+      "appWindowSize": "medium"
+    },
+    "branding": {
+      "name": "LinkNest",
+      "tagline": "Where meaningful connections take flight.",
+      "logoUrl": "https://storage.googleapis.com/audos-images/logo-studio/8dc7b7d3-f265-4002-a791-19e18b94e14d/8bf0001f-99df-4fc7-bfcf-6f85df883e07.png",
+      "headingFont": "DM Sans",
+      "bodyFont": "DM Sans",
+      "colors": {
+        "primary": "#0ea5e9",
+        "highlight": "#f97068",
+        "contrast": "#10b981",
+        "secondary": "#f97068",
+        "accent": "#10b981",
+        "primaryScale": {
+          "50": "#f0f9ff",
+          "100": "#e0f2fe",
+          "200": "#bae6fd",
+          "500": "#0ea5e9",
+          "600": "#0284c7",
+          "700": "#0369a1",
+          "900": "#0c4a6e"
+        },
+        "highlightScale": {
+          "50": "#fff5f4",
+          "100": "#ffe8e6",
+          "200": "#ffccc8",
+          "500": "#f97068",
+          "600": "#e5534e",
+          "700": "#c73e39",
+          "900": "#7a1f1c"
+        },
+        "surfaces": {
+          "page": "#fafcfe",
+          "pageAlt": "#f0f6fb",
+          "gradientFrom": "#0ea5e9",
+          "gradientVia": "#7dd3fc",
+          "gradientTo": "#f97068",
+          "card": "#ffffff",
+          "cardHover": "#f0f9ff",
+          "panel": "#f0f6fb",
+          "panelStrong": "#e0f2fe",
+          "muted": "#e2e8f0",
+          "accentSoft": "#fff5f4",
+          "border": "#cbd5e1",
+          "borderStrong": "#94a3b8"
+        },
+        "text": {
+          "primary": "#0f172a",
+          "secondary": "#475569",
+          "brand": "#0284c7",
+          "accent": "#f97068",
+          "muted": "#94a3b8",
+          "onPrimary": "#ffffff",
+          "onHighlight": "#ffffff",
+          "onContrast": "#ffffff"
+        },
+        "semantic": {
+          "success": "#16a34a",
+          "warning": "#d97706",
+          "danger": "#dc2626"
+        },
+        "shell": {
+          "buttonText": "#ffffff",
+          "accentButtonText": "#ffffff",
+          "dockText": "#475569",
+          "icon": "#0ea5e9",
+          "shadow": "#b7e4f8",
+          "shadowStrong": "#95d7f5"
+        }
+      },
+      "palette": {
+        "primary": "#0ea5e9",
+        "highlight": "#f97068",
+        "contrast": "#10b981",
+        "secondary": "#f97068",
+        "accent": "#10b981",
+        "primaryScale": {
+          "50": "#f0f9ff",
+          "100": "#e0f2fe",
+          "200": "#bae6fd",
+          "500": "#0ea5e9",
+          "600": "#0284c7",
+          "700": "#0369a1",
+          "900": "#0c4a6e"
+        },
+        "highlightScale": {
+          "50": "#fff5f4",
+          "100": "#ffe8e6",
+          "200": "#ffccc8",
+          "500": "#f97068",
+          "600": "#e5534e",
+          "700": "#c73e39",
+          "900": "#7a1f1c"
+        },
+        "surfaces": {
+          "page": "#fafcfe",
+          "pageAlt": "#f0f6fb",
+          "gradientFrom": "#0ea5e9",
+          "gradientVia": "#7dd3fc",
+          "gradientTo": "#f97068",
+          "card": "#ffffff",
+          "cardHover": "#f0f9ff",
+          "panel": "#f0f6fb",
+          "panelStrong": "#e0f2fe",
+          "muted": "#e2e8f0",
+          "accentSoft": "#fff5f4",
+          "border": "#cbd5e1",
+          "borderStrong": "#94a3b8"
+        },
+        "text": {
+          "primary": "#0f172a",
+          "secondary": "#475569",
+          "brand": "#0284c7",
+          "accent": "#f97068",
+          "muted": "#94a3b8",
+          "onPrimary": "#ffffff",
+          "onHighlight": "#ffffff",
+          "onContrast": "#ffffff"
+        },
+        "semantic": {
+          "success": "#16a34a",
+          "warning": "#d97706",
+          "danger": "#dc2626"
+        },
+        "shell": {
+          "buttonText": "#ffffff",
+          "accentButtonText": "#ffffff",
+          "dockText": "#475569",
+          "icon": "#0ea5e9",
+          "shadow": "#b7e4f8",
+          "shadowStrong": "#95d7f5"
+        }
+      }
+    }
+  },
+  "cdnDependencies": {
+    "remark-gfm": {
+      "version": "4.0.0"
+    }
+  },
+  "updatedAt": "2026-03-27T16:49:22.367Z"
+}
