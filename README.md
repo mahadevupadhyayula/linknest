@@ -9,7 +9,10 @@ npm install
 npm run build
 ```
 
-Then open `dist/index.html` in your browser.
+Then either:
+
+- open `dist/index.html` directly in your browser, or
+- serve `dist/` over HTTP (recommended), for example: `npx serve dist`.
 
 ## Deploy to Vercel
 
