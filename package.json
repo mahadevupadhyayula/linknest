@@ -1,0 +1,17 @@
+{
+  "name": "linknest-landing",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-vercel.mjs",
+    "vercel:deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.3"
+  }
+}
