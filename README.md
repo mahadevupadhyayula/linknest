@@ -1,6 +1,6 @@
 # linknest
 
-Relationship intelligence engine landing page.
+Static landing page rebuilt to match the current Audos-style layout and content.
 
 ## Run locally
 
