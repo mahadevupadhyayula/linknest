@@ -20,15 +20,10 @@ await esbuild.build({
   define: {
     'process.env.NODE_ENV': '"production"',
   },
-  plugins: [
-    {
-      name: 'audos-esm-rewrite',
-      setup(build) {
-        build.onResolve({ filter: /^https:\/\/esm\.sh\/react@18$/ }, () => ({ path: 'react' }));
-        build.onResolve({ filter: /^https:\/\/esm\.sh\/react-dom@18\/client$/ }, () => ({ path: 'react-dom/client' }));
-      },
-    },
-  ],
+  alias: {
+    'https://esm.sh/react@18': 'react',
+    'https://esm.sh/react-dom@18/client': 'react-dom/client',
+  },
 });
 
 await copyFile(path.join(root, 'static/index.html'), path.join(outDir, 'index.html'));
